@@ -21,9 +21,22 @@ if (isset($_SESSION['username'])) {
 
 <body>
 
+<div id="new-message">
+    <p class="m-header">New Message</p>
+    <p class="m-body">
+    <form align="center" method="post">
+        <input type="text" class="message-input" placeholder="username" name="user_name"/>
+        
+        <br><br>
+        <textarea class="message-input" placeholder="write your message"></textarea><br><br>
+        <input type="submit" value="send" name="send">
+        <button onclick="document.getElementById('new-message').style.display='none'">Cancel</button>
+    </form>
+    </p>
+    <p class="m-footer">Click send to send</p>
+</div>
+
 <div id="container">
-
-
     <div id="menu">
         <?php
         echo $_SESSION['username'];
@@ -31,28 +44,14 @@ if (isset($_SESSION['username'])) {
 
         ?>
     </div>
-
-    <?php require_once("app/leftCol.php"); ?>
-
+    <div id="left-col">
+        <?php require_once("app/leftCol.php"); ?>
+    </div>
     <div id="right-col">
-        <div id="right-col-container">
-            <div id="msg-container">
-                <div class="grey-msg">
-                    <a href="#">Me</a>
-                    <p> This messagge will show grey</p>
-                </div>
-                <div class="white-msg">
-                    <a href="#">You</a>
-                    <p>This messagge will show white</p>
-                </div>
-
-            </div>
-            <textarea class="textarea" placeholder="Write your message..."></textarea>
-
-        </div>
+        <?php require_once("app/rightCol.php"); ?>
 
     </div>
-    
+
 </div>
 
 </body>
