@@ -15,26 +15,15 @@ if (isset($_SESSION['username'])) {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script/checkInDb.js"></script>
     <title>HOME</title>
 
 </head>
 
 <body>
 
-<div id="new-message">
-    <p class="m-header">New Message</p>
-    <p class="m-body">
-    <form align="center" method="post">
-        <input type="text" class="message-input" placeholder="username" name="user_name"/>
-        
-        <br><br>
-        <textarea class="message-input" placeholder="write your message"></textarea><br><br>
-        <input type="submit" value="send" name="send">
-        <button onclick="document.getElementById('new-message').style.display='none'">Cancel</button>
-    </form>
-    </p>
-    <p class="m-footer">Click send to send</p>
-</div>
+<?php require_once("app/newMessage.php"); ?>
 
 <div id="container">
     <div id="menu">

@@ -2,7 +2,7 @@
 require("../include/db.php");
 
 $user = strtolower($_POST['user']);
-if (isset($_POST['user'])) {
+if (isset($user)) {
     $query = "SELECT * FROM users WHERE user_name= '$user' ";
     $r = mysqli_query($con, $query);
     if ($r) {
