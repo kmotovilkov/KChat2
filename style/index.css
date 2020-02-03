@@ -58,6 +58,7 @@ a, p {
     overflow: auto;
 }
 
+
 .grey-back img {
     float: left;
     width: 50px;
@@ -67,8 +68,22 @@ a, p {
 
 #msg-container {
     height: 85%;
-    border: 1px solid #4e4e4e;
     overflow: auto;
+}
+
+.grey-msg, .white-msg {
+    border: 1px solid black;
+    width: 96%;
+
+    padding: 5px;
+    margin: 0px auto;
+    margin-top: 2px;
+    overflow: auto;
+}
+
+.grey-msg {
+    background: #cacaca;
+
 }
 
 .textarea {
@@ -78,3 +93,4 @@ a, p {
     bottom: 1px;
     margin: 0px auto;
 }
+

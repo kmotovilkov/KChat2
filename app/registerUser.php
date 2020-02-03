@@ -13,8 +13,8 @@ if (isset($_POST['register'])) {
         header("Location:login.php");
     } else {
         echo "NO registered";
+
     }
 }
 
 
-?>
