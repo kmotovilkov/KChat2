@@ -1,0 +1,15 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    padding: 8px;
+    width: 300px;
+    margin: 0px auto;
+}
+.input{
+    width: 92%;
+    padding: 2%;
+}
