@@ -10,7 +10,7 @@ if (isset($_POST['register'])) {
 
     $r = mysqli_query($con, $query);
     if ($r) {
-        header("Location:login.php");
+        echo "<script>window.open('login.php','_self')</script>";
     } else {
         echo "NO registered";
 
