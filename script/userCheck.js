@@ -2,11 +2,8 @@
 document.getElementById("register").disabled = true;
 function userCheck() {
     let user_name = document.getElementById("user_name").value;
-
-
     $.post("app/userCheck.php",
         {
-
             user: user_name
         },
         function (data, status) {

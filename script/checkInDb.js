@@ -1,5 +1,3 @@
-
-
 document.getElementById("send").disabled = true;
 function checkInDb() {
     let user_name = document.getElementById("user_name").value;

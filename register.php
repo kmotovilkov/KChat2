@@ -17,8 +17,7 @@
     <form method="post">
 
         <input type="text" placeholder="Username" class="input" id="user_name" onkeyup="userCheck()" name="user_name"
-               required><br><br>
-        <div id="checking"></div>
+               required> <div id="checking"></div><br><br>
         <input type="password" placeholder="Password" class="input" name="pass" required><br><br>
         <input type="submit" id="register" name="register" value="register">
         <?php include("app/registerUser.php") ?>
