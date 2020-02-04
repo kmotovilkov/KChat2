@@ -27,7 +27,7 @@ VALUES ('$senderName','$receiverName','$message','$date')";
 
     $r = mysqli_query($con, $query);
     if ($r) {
-        echo "message send";
+        header("location:index.php?user=" . $receiverName);
     } else {
         echo "$query";
     }
