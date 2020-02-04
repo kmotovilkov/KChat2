@@ -14,6 +14,7 @@ if (isset($_SESSION['username'])) {
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="script/checkInDb.js"></script>
+<!--    <script type="text/javascript" src="script/msg.js"></script>-->
     <title>HOME</title>
 </head>
 <body>
